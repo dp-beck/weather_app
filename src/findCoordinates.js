@@ -1,4 +1,4 @@
-// Use OpenWeather API to return latitude and longitude
+// This function use Geocoding API to return latitude and longitude
 // coordinates for an inputted city name or state.
 
 async function findCoordinates(cityName, stateCode, countryCode) {
