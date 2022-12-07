@@ -3,9 +3,9 @@
 
 async function findWeatherData(latitude, longitude) {
   try {
-    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=8696ac5681360fb97515b98c3d94684c`, { mode: 'cors' });
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=8696ac5681360fb97515b98c3d94684c&units=imperial`, { mode: 'cors' });
     const data = await response.json();
-    console.log(data);
+    return data;
   } catch (error) {
     console.log(error);
   }
