@@ -1,10 +1,31 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  mode: 'development',
+  entry: {
+    index: './src/index.js',
+    findWeatherData: './src/findWeatherData.js',
+    findCoordinates: './src/findCoordinates.js',
+    displayWeatherData: './src/displayWeatherData.js',
+  },
+  devtool: 'inline-source-map',
+  devServer: {
+    static: './dist',
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'Weather App',
+      template: path.resolve(__dirname, './src/template.html'),
+    }),
+  ],
   output: {
-    filename: 'bundle.js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
+    clean: true,
+  },
+  optimization: {
+    runtimeChunk: 'single',
   },
   module: {
     rules: [
