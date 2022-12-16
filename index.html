@@ -5,14 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-<script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script><script defer src="findWeatherData.bundle.js"></script><script defer src="findCoordinates.bundle.js"></script><script defer src="displayWeatherData.bundle.js"></script></head>
+<script defer src="runtime.bundle.js"></script><script defer src="index.bundle.js"></script><script defer src="findWeatherData.bundle.js"></script><script defer src="findCoordinates.bundle.js"></script><script defer src="displayWeatherData.bundle.js"></script><script defer src="convertTemperature.bundle.js"></script><script defer src="currentTime.bundle.js"></script><script defer src="findTimezone.bundle.js"></script></head>
 <body>
-    <label for="city">City: (Required)</label><br>
-    <input type="text" id="city" name="city"><br>
-    <label for="state">State: (Required if USA)</label><br>
-    <input type="text" id="state" name="state">
-    <label for="countryCode">County Code: (If Outside of USA)</label><br>
-    <input type="text" id="countryCode" name="countryCode">
-    <button type="button" id="submitButton">Submit</button>
+    <header>
+        <h1 id="currentLocationDisplayed"></h1>
+    </header>
+    
+    <div class="content">
+        <div class="temperatureWrapper">
+            <div id="temperatureDisplay"></div>
+            <div class="temperatureConversionButtons">
+                <button type="button" id="fahrenheitToCelsiusButton">Change to Celsius</button>
+                <button type="button" id="celsiusToFahrenheitButton">Change to Fahrenheit</button>
+            </div>
+        </div>
+
+        <div id="clock"></div>
+        
+        <div id="weatherDisplay"></div>
+        
+        <div class="searchForm">
+            <label for="city">City: (Required)</label><br>
+            <input type="text" id="city" name="city" value="Cincinnati"><br>
+            <label for="state">State: (Required if USA)</label><br>
+            <input type="text" id="state" name="state" value="OH">
+            <label for="countryCode">County Code: (If Outside of USA)</label><br>
+            <input type="text" id="countryCode" name="countryCode" value="USA">
+            <button type="button" id="submitButton">Submit</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Daniel Beck Copyright 2022</p>
+    </footer>
 </body>
 </html>
