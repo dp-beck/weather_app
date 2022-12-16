@@ -7,12 +7,36 @@
     <title>Weather App</title>
 </head>
 <body>
-    <label for="city">City: (Required)</label><br>
-    <input type="text" id="city" name="city"><br>
-    <label for="state">State: (Required if USA)</label><br>
-    <input type="text" id="state" name="state">
-    <label for="countryCode">County Code: (If Outside of USA)</label><br>
-    <input type="text" id="countryCode" name="countryCode">
-    <button type="button" id="submitButton">Submit</button>
+    <header>
+        <h1 id="currentLocationDisplayed"></h1>
+    </header>
+    
+    <div class="content">
+        <div class="temperatureWrapper">
+            <div id="temperatureDisplay"></div>
+            <div class="temperatureConversionButtons">
+                <button type="button" id="fahrenheitToCelsiusButton">Change to Celsius</button>
+                <button type="button" id="celsiusToFahrenheitButton">Change to Fahrenheit</button>
+            </div>
+        </div>
+
+        <div id="clock"></div>
+        
+        <div id="weatherDisplay"></div>
+        
+        <div class="searchForm">
+            <label for="city">City: (Required)</label><br>
+            <input type="text" id="city" name="city" value="Cincinnati"><br>
+            <label for="state">State: (Required if USA)</label><br>
+            <input type="text" id="state" name="state" value="OH">
+            <label for="countryCode">County Code: (If Outside of USA)</label><br>
+            <input type="text" id="countryCode" name="countryCode" value="USA">
+            <button type="button" id="submitButton">Submit</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Daniel Beck Copyright 2022</p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+}
+
+header {
+    text-align: center;
+    background: lightgreen;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 2fr 1fr;
+}
+
+#temperatureWrapper {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: aquamarine;
+}
+
+#clock {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: lightskyblue;
+}
+
+#weatherDisplay {
+    grid-column: 3;
+    grid-row: 1;
+    background-color: lightseagreen;
+}
+
+.searchForm {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    background-color: chocolate;
+}
+
+footer {
+    background: lightcoral;
+    text-align: center;
+}

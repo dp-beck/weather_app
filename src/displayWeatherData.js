@@ -6,9 +6,11 @@ import findWeatherData from './findWeatherData';
 async function displayWeatherData(cityName, stateCode, countryCode) {
   const coordinates = await findCoordinates(cityName, stateCode, countryCode);
   const weatherData = await findWeatherData(coordinates[0], coordinates[1]);
-  console.log(weatherData);
-  console.log(`The temperature is ${weatherData.main.temp} Fahrenheit.`);
-  console.log(`The weather today is ${weatherData.weather[0].description}.`);
+  const temperatureDisplay = document.getElementById('temperatureDisplay');
+  const weatherDisplay = document.getElementById('weatherDisplay');
+  temperatureDisplay.innerText = weatherData.main.temp;
+  weatherDisplay.innerText = weatherData.weather[0].description;
+  document.getElementById('currentLocationDisplayed').innerText = `${cityName}, ${stateCode}, ${countryCode} Weather`;
 }
 
 export default displayWeatherData;

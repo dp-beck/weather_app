@@ -8,6 +8,9 @@ module.exports = {
     findWeatherData: './src/findWeatherData.js',
     findCoordinates: './src/findCoordinates.js',
     displayWeatherData: './src/displayWeatherData.js',
+    convertTemperature: './src/convertTemperature.js',
+    currentTime: './src/currentTime.js',
+    findTimezone: './src/findTimezone.js',
   },
   devtool: 'inline-source-map',
   devServer: {

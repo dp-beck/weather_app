@@ -14,12 +14,15 @@ The look of the page will change based on the data (images that describe the wea
 
 DONE 3. Write functions that process the JSON data you’re getting from the API and return an object with only the data you require for your app.
 
-4. Set up a simple form that will let users input their location and will fetch the weather info.
+DONE 4. Set up a simple form that will let users input their location and will fetch the weather info.
 
-5. Display the information on your webpage!
+DONE 5. Write function to convert to celsius and back.
 
-6. Include a toggle switch for celsius to fahrenheit.
+DONE 5. Display the information on your webpage! 
 
-7. Change background image based on current weather
+6. Include a toggle switch for celsius to fahrenheit. 
+    Make it toggle
+
+7. Conver text weather description to SVG display
 
 8. Add any styling you like!
