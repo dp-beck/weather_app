@@ -30,13 +30,14 @@
         </div>
     
         <div class="searchWrapper">
+            <p id="errorMessage"></p>
             <p>Need to find a new city?</p>
             <div class="searchForm">
-                <label for="city">City: (Required)</label>
+                <label for="city">City: <span class="required">(Required)</span></label>
                 <input type="text" id="city" name="city" value="Cincinnati">
-                <label for="state">State: (Required if USA)</label>
+                <label for="state">State: <span class="required">(Required if USA)</span></label>
                 <input type="text" id="state" name="state" value="OH">
-                <label for="countryCode">County Code: (If Outside of USA)</label>
+                <label for="countryCode">Country Code: <span class="required">(Required if not USA)</span></label>
                 <input type="text" id="countryCode" name="countryCode" value="USA">
                 <button type="button" id="submitButton">Submit</button>
             </div>
@@ -44,7 +45,7 @@
     </div>
 
     <footer>
-        <p>Daniel Beck Copyright 2022</p>
+        <p>Daniel Beck © 2022</p>
     </footer>
 </body>
 </html>
