@@ -34,7 +34,7 @@ submitButton.addEventListener('click', () => {
 function displayFahrenheit() {
   const temperature = parseFloat(document.getElementById('temperatureDisplay').innerText);
   const newTemp = convertTemperature.celsiusToFahrenheit(temperature).toFixed(2);
-  document.getElementById('temperatureDisplay').innerText = newTemp;
+  document.getElementById('temperatureDisplay').innerText = newTemp  + '℉';
   celsiusToFahrenheitButton.disabled = true;
   fahrenheitToCelsiusButton.disabled = false;
 }
@@ -42,7 +42,7 @@ function displayFahrenheit() {
 function displayCelsius() {
   const temperature = parseFloat(document.getElementById('temperatureDisplay').innerText);
   const newTemp = convertTemperature.fahrenheitToCelsius(temperature).toFixed(2);
-  document.getElementById('temperatureDisplay').innerText = newTemp;
+  document.getElementById('temperatureDisplay').innerText = newTemp + '℃';
   fahrenheitToCelsiusButton.disabled = true;
   celsiusToFahrenheitButton.disabled = false;
 }

@@ -1,28 +1,5 @@
 # Weather App
 
-In this app, you will be able to search for a specific location and toggle displaying the data in Fahrenheit or Celsius.
+In this app, you can search for a specific location to display the current time and weather for this location. You can also toggle between fahrenheit and celsius for the temperature. The app uses data from the Open Weather API.
 
-The look of the page will change based on the data (images that describe the weather.) Feel free to use promises or async/await in your code, though you should try to become comfortable with both.
-
-## TO DO:
-
-1. Write functions that hit the API - Functions that can take a location and return the weather data for that location. 
-  DONE -- a.) Write a function that will take a city name or zip code and return the lat/long
-    **This function returns an array [Latitude, Longitude]**
-  DONE -- b.) Write a function that will take the lat./long. and return the weather data
-    **What data do you want? How do you want to return it**
-
-DONE 3. Write functions that process the JSON data you’re getting from the API and return an object with only the data you require for your app.
-
-DONE 4. Set up a simple form that will let users input their location and will fetch the weather info.
-
-DONE 5. Write function to convert to celsius and back.
-
-DONE 5. Display the information on your webpage! 
-
-6. Include a toggle switch for celsius to fahrenheit. 
-    Make it toggle
-
-7. Conver text weather description to SVG display
-
-8. Add any styling you like!
+Live Preview:

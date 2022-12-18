@@ -8,7 +8,8 @@ async function findCoordinates(cityName, stateCode, countryCode) {
     const coordinates = [data[0].lat, data[0].lon];
     return coordinates;
   } catch (error) {
-    console.log(error);
+    const errorMessage = document.getElementById('errorMessage');
+    errorMessage.innerText = 'Sorry, no location was found. Please try again.';
   }
 }
 

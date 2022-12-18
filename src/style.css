@@ -7,7 +7,9 @@ body {
 
 header {
     text-align: center;
-    background: lightgreen;
+    color: white;
+    background: #900C3F;
+    box-shadow: 10px 5px 5px gray;
 }
 
 .content {
@@ -16,31 +18,93 @@ header {
     grid-template-rows: 2fr 1fr;
 }
 
-#temperatureWrapper {
+.temperatureWrapper {
     grid-column: 1;
     grid-row: 1;
-    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#temperatureDisplay {
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 50px;
+    border: 2px dotted black;
+    border-radius: 10px;
+}
+
+.clockWrapper {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #clock {
-    grid-column: 2;
+    margin-bottom: 35px;
+    padding: 5px;
+    font-size: 50px;
+    border: 2px dotted black;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.weatherWrapper {
+    grid-column: 3;
     grid-row: 1;
-    background-color: lightskyblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#weatherIcon {
+    padding: 5px;
+    border: 2px dotted black;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
 }
 
 #weatherDisplay {
-    grid-column: 3;
-    grid-row: 1;
-    background-color: lightseagreen;
+    padding: 5px;
+    font-size: 25px;
+    width: fit-content;
+    height: fit-content;
 }
 
-.searchForm {
+.searchWrapper {
     grid-column: 1 / span 3;
     grid-row: 2;
-    background-color: chocolate;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.required, #errorMessage {
+    color: red;
+    font-weight: bold;
 }
 
 footer {
     background: lightcoral;
     text-align: center;
+    font-weight: bold;
+}
+
+button {
+    font-weight: bold;
+}
+
+#fahrenheitToCelsiusButton, #celsiusToFahrenheitButton {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
 }
